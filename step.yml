@@ -55,12 +55,12 @@ toolkit:
 
 
 inputs:
-  - FIND_ISSUE_INPUT: $BITRISE_GIT_MESSAGE
+  - find_issue_content: $BITRISE_GIT_MESSAGE
     opts:
-      title: "Input"
+      title: Text Content
       summary: Where should we look for jira issues
       description: |
-        The input used to locate the jira commit message.
+        The input text content used to locate the jira commit message.
 
         For example, the git commit message or branch name.
       is_expand: true
@@ -68,7 +68,7 @@ inputs:
       value_options: []
 
 outputs:
-  - JIRA_ISSUE:
+  - JIRA_ISSUE_LIST:
     opts:
       title: "Jira Issue(s)"
       summary: The jira issues found in the input
