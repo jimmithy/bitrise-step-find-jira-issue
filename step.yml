@@ -60,7 +60,7 @@ inputs:
       title: Text Content
       summary: Where should we look for jira issues
       description: |
-        The input text content used to locate the jira commit message.
+        The input text content used to locate the jira ticket number.
 
         For example, the git commit message or branch name.
       is_expand: true
